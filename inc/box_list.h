@@ -17,6 +17,6 @@ int find_box_id(box_t* head,int id);
 
 float Avg_volume(box_t* head);
 
-int remove_box_id(box_t* head, int id);
+box_t* remove_box_id(box_t* head, int id);
 
 #endif
