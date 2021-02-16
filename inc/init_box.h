@@ -2,7 +2,7 @@
 #define __INIT_BOX_H__
 
 #include <stdio.h>
-#include <stdint.h>
+#include <string.h>
 /**
 *
 *Header file for box structure including enum for color property

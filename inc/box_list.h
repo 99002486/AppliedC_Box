@@ -1,4 +1,4 @@
-#ifndef __BOX_LIST_H__
+ #ifndef __BOX_LIST_H__
 #define __BOX_LIST_H__
 
 #include "init_box.h"
@@ -11,7 +11,7 @@ box_t* add_a_box(box_t* head,box_data_t data);
 
 int display_all(box_t* head);
 
-int box_given_id(box_t* head,int id);
+int count_color(box_t* head,char* color);
 
 int remove_box_id(box_t* head, int id);
 
