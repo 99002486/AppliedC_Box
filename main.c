@@ -40,6 +40,7 @@ int main()
 	head=add_a_box(head,box_data_2);
 	head=add_a_box(head,box_data_3);
 	head=add_a_box(head,box_data_4);
+	head=remove_box_id(head,12);
 
 	display_all(head);
 

@@ -5,7 +5,8 @@ src/add_box.c\
 src/display_boxes.c\
 src/count_color.c\
 src/box_id.c\
-src/avg_volume.c
+src/avg_volume.c\
+src/remove_box_id.c
 
 INC= -Iinc
 
