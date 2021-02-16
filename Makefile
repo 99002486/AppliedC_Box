@@ -17,4 +17,4 @@ $(PROJECT_NAME):all
 .PHONY:all
 
 all:$(SRC)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+	gcc $(SRC) $(INC) -g -o $(PROJECT_OUTPUT).out

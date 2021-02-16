@@ -24,7 +24,7 @@ int find_box_id(box_t* head,int id){
     }
     
     if(flag==0){
-	printf("Given id= %d did not match with any nodes",id);
+	printf("Given id= %d did not match with any nodes\n",id);
 	return 0;
     }
 		
