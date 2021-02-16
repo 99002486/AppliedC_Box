@@ -11,7 +11,6 @@
 */
 
 typedef struct box box_t;
-typedef enum {red=1,orange,blue,green,violet,indigo,yellow} COLORS;
 
 typedef struct{
 	int box_id;
@@ -19,7 +18,7 @@ typedef struct{
         float breadth;
         float height;
         float weight;
-	COLORS color;
+	char color[10];
 }box_data_t;
 
 struct box{
