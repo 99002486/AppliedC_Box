@@ -11,7 +11,7 @@
 */
 
 typedef struct box box_t;
-typedef enum = {red=1,orange,blue,green,violet,indigo,yellow} COLORS;
+typedef enum {red=1,orange,blue,green,violet,indigo,yellow} COLORS;
 
 typedef struct{
 	int box_id;
