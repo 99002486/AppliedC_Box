@@ -2,7 +2,8 @@ PROJECT_NAME=AppliedC_box
 
 SRC=main.c\
 src/add_box.c\
-src/display_boxes.c
+src/display_boxes.c\
+src/count_color.c
 
 INC= -Iinc
 
