@@ -3,7 +3,9 @@ PROJECT_NAME=AppliedC_box
 SRC=main.c\
 src/add_box.c\
 src/display_boxes.c\
-src/count_color.c
+src/count_color.c\
+src/box_id.c\
+src/avg_volume.c
 
 INC= -Iinc
 

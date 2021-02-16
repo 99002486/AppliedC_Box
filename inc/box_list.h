@@ -13,6 +13,10 @@ int display_all(box_t* head);
 
 int count_color(box_t* head,char* color);
 
+int find_box_id(box_t* head,int id);
+
+float Avg_volume(box_t* head);
+
 int remove_box_id(box_t* head, int id);
 
 #endif
