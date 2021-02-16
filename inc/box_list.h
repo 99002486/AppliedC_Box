@@ -7,7 +7,7 @@
 *@function-adds a box to end of list
 *@return-signifying successfull execution of function
 */
-box_t add_a_box(box_t* head,box_data_t data);
+box_t* add_a_box(box_t* head,box_data_t data);
 
 int display_all(box_t* head);
 
