@@ -11,7 +11,7 @@ int main()
 		.breadth=10,
 		.height=15,
 		.weight=20,
-		.color=blue};
+		.color="blue"};
 	head=add_a_box(head,box_data_1);
 	display_all(head);
 	return 0;

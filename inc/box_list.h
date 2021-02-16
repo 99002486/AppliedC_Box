@@ -11,7 +11,7 @@ box_t* add_a_box(box_t* head,box_data_t data);
 
 int display_all(box_t* head);
 
-int box_given_id(box_t* head,COLORS color);
+int box_given_id(box_t* head,int id);
 
 int remove_box_id(box_t* head, int id);
 
