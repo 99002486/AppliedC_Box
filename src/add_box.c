@@ -1,7 +1,7 @@
 
 #include "box_list.h"
 
-box_t add_a_box(box_t* head,box_data_t data){
+box_t* add_a_box(box_t* head,box_data_t data){
 
 	struct box *newbox= malloc(sizeof(struct box));
 	newbox->data =	data;
