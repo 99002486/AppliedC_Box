@@ -12,7 +12,7 @@ int main()
 		.height=15,
 		.weight=20,
 		.color=blue};
-	add_a_box(head,box_data_1);
+	head=add_a_box(head,box_data_1);
 	display_all(head);
 	return 0;
 }
