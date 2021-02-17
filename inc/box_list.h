@@ -1,4 +1,4 @@
- #ifndef __BOX_LIST_H__
+#ifndef __BOX_LIST_H__
 #define __BOX_LIST_H__
 
 #include "init_box.h"
