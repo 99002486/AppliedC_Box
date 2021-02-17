@@ -6,7 +6,8 @@ src/display_boxes.c\
 src/count_color.c\
 src/box_id.c\
 src/avg_volume.c\
-src/remove_box_id.c
+src/remove_box_id.c\
+src/min_max_diff.c
 
 INC= -Iinc
 
