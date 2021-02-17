@@ -4,7 +4,8 @@
 box_t *head = NULL;
 
 #define id 12
-		
+
+
 int main()
 {
 	box_data_t box_data_1 = {
@@ -49,8 +50,8 @@ int main()
 	printf("finding box id with %d\n",id);
 	printf("Box with the id= %d has these features\n",id);
 	find_box_id(head,id);
-	
-	printf("Average volume of the boxes is %f",Avg_volume(head));	
- 
+	printf("The difference between minimum and maximum volumes are %.2f\n",min_max_diff(head));
+	printf("Average volume of the boxes is %.2f\n",Avg_volume(head));
+
 	return 0;
 }
