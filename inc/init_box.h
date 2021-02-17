@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <limits.h>
+#include <float.h>
 /**
 *
 *Header file for box structure including enum for color property
