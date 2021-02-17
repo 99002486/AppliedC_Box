@@ -16,5 +16,11 @@
   - Update the weight of the box with specfic id.
   - Remove the box with given id.
   
-
+## Badges
+- Build
+  - ![C/C++ CI](https://github.com/99002486/Number_operations_and_properties/workflows/C/C++%20CI/badge.svg)
+- CPPCheck
+  - ![cppcheck-action](https://github.com/99002486/Number_operations_and_properties/workflows/cppcheck-action/badge.svg)
+- Unit testing
+  - ![Unit testing](https://github.com/99002486/Number_operations_and_properties/workflows/Unit%20testing/badge.svg)
 
