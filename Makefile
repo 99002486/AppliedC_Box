@@ -39,4 +39,4 @@ run:$(PROJECT_NAME)
 	./$(PROJECT_OUTPUT)
 
 clean:
-	rm *.out *.o
+	rm *.out
