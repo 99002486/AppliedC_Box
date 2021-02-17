@@ -19,5 +19,5 @@ float Avg_volume(box_t* head);
 
 box_t* remove_box_id(box_t* head, int id);
 
-int max_min_diff(box_t* head);
+float max_min_diff(box_t* head);
 #endif
