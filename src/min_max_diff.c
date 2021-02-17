@@ -13,10 +13,12 @@ float min_max_diff(box_t* head)
 		height=current->data.height;
 		current_volume=(length*breadth*height);
 		if(current_volume>max_vol)
-			max=current_volume;
+			max_vol=current_volume;
 		if(current_volume<min_vol)
-			min=current_volume;
+			min_vol=current_volume;
 		current=current->next_box;
+
 	};
-	return max-min;
+	vol_diff=(max_vol-min_vol);
+	return vol_diff;
 }
