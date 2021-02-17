@@ -73,5 +73,15 @@ float Avg_volume(box_t* head);
 */
 box_t* remove_box_id(box_t* head, int id);
 
+/**
+*@brief         min_max diff
+*
+*@usage         diffrence between min and max volume of the nodes
+*
+*@param         Pointer to list
+*
+*@return       	 volume diffrence of min and max value 
+*/
+
 float min_max_diff(box_t* head);
 #endif
