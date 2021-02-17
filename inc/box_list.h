@@ -18,7 +18,7 @@ box_t* add_a_box(box_t* head,box_data_t data);
 /**
 *@brief		display_all
 *
-@usage		Displays the features of every node
+@usage```Displays the features of every node
 *
 *@params	Pointer to list
 *
@@ -80,7 +80,7 @@ box_t* remove_box_id(box_t* head, int id);
 *
 *@param         Pointer to list
 *
-*@return       	 volume diffrence of min and max value 
+*@return       	volume diffrence of min and max value 
 */
 
 float min_max_diff(box_t* head);
