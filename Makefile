@@ -1,5 +1,6 @@
 PROJECT_NAME=AppliedC_box
 
+COVERAGE_FLAG= -fprofile-arcs -ftest-coverage
 SRC=main.c\
 src/add_box.c\
 src/display_boxes.c\
@@ -26,7 +27,7 @@ TEST_OUTPUT=test_$(PROJECT_NAME).out
 
 $(PROJECT_NAME):all
 
-.PHONY:all test run clean doc memcheck coverage size
+.PHONY:all test run clean memcheck coverage size
 
 all:$(SRC)
 	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT)
@@ -39,15 +40,13 @@ run:$(PROJECT_NAME)
 	./$(PROJECT_OUTPUT)
 
 clean:
-	rm *.out *.gcov  *.gcda *.gcno
+	rm *.out 
 
-doc:
-	make -C documentation
 
 memcheck:
 	valgrind ./$(PROJECT_OUTPUT)
 
-coverage:$(PROJECT_OUTPUT)
+coverage:$(PROJECT_OUTPUT) 
 	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) -o $(PROJECT_OUTPUT)
 	./$(PROJECT_OUTPUT)
 	gcov -a  main.c
