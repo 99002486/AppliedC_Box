@@ -53,4 +53,4 @@ size:$(PROJECT_OUTPUT)
 	size  ./$(PROJECT_OUTPUT)
 
 clean:
-	rm *.out *.gcov *.gcno *.gcda
+	rm *.out 
