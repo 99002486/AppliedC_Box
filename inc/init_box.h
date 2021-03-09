@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <float.h>
+#include <stdlib.h>
+
 /**
 *
 *Header file for box structure including enum for color property
