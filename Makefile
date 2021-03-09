@@ -39,10 +39,6 @@ test:$(TEST_SRC)
 run:$(PROJECT_NAME)
 	./$(PROJECT_OUTPUT)
 
-clean:
-	rm *.out *.gcov *.gcno *.gcda
-
-
 memcheck:
 	valgrind ./$(PROJECT_OUTPUT)
 
@@ -52,5 +48,9 @@ coverage:
 	./$(PROJECT_OUTPUT)
 	./$(TEST_OUTPUT)
 	gcov -a  main.c
+	
 size:$(PROJECT_OUTPUT)
 	size  ./$(PROJECT_OUTPUT)
+
+clean:
+	rm *.out *.gcov *.gcno *.gcda
