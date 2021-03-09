@@ -29,7 +29,7 @@ $(PROJECT_NAME):all
 
 .PHONY:all test run clean memcheck coverage size
 
-all:$(SRC)
+all:
 	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT)
 
 test:$(TEST_SRC)
@@ -40,15 +40,17 @@ run:$(PROJECT_NAME)
 	./$(PROJECT_OUTPUT)
 
 clean:
-	rm *.out 
+	rm *.out *.gcov *.gcno *.gcda
 
 
 memcheck:
 	valgrind ./$(PROJECT_OUTPUT)
 
-coverage:$(PROJECT_OUTPUT) 
+coverage: 
 	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) -o $(PROJECT_OUTPUT)
+	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) -lcunit -lm
 	./$(PROJECT_OUTPUT)
+	./$(TEST_OUTPUT)
 	gcov -a  main.c
 size:$(PROJECT_OUTPUT)
 	size  ./$(PROJECT_OUTPUT)
